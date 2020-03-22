@@ -1,0 +1,81 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid lightgray;
+}
+
+.Navbar img {
+    align-self: center;
+    margin-right: auto;
+    margin-left: 16em;
+    width: 60px;
+    filter: invert(23%) sepia(68%) saturate(7487%) hue-rotate(224deg) brightness(98%) contrast(112%);
+}
+
+.Navbar ul {
+    margin-top:1.5em;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    list-style: none;
+}
+
+.Navbar ul li {
+    align-self: center;
+}
+
+.Navbar ul li .anchor {
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    font-size: 1.1em;
+    padding: 15px;
+    color: gray;
+    transition: 150ms ease;
+    scroll-behavior: smooth;
+}
+
+.Navbar ul li .anchor:hover {
+    color:black;
+}
+
+.contact-nav-button {
+    align-self: center;
+    width: 140px;
+    height: 45px;
+    border-radius: 36px;
+    border: 2px solid #0049ff;
+    color: #0049ff;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family:'Baloo 2';
+    text-align: center;
+    background: none;
+    cursor: pointer;
+    transition: 150ms ease;
+    outline: none;
+    margin-left: 2em;
+    margin-right: 15em;
+}
+
+.contact-nav-button:hover {
+    background-color: #0049ff;
+    color: white;
+}
+
+@media(max-width: 1280px) {
+    .contact-nav-button {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .Navbar ul li .anchor {
+        padding:5px;
+    }
+
+    .Navbar img {
+        margin-left: 1em;
+    }
+}

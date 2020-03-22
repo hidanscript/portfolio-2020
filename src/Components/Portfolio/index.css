@@ -1,0 +1,45 @@
+.portfolio {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+    height:50em;
+    background-color: #0049ff;
+}
+
+.portfolio .waves {
+    position: absolute;
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.2;
+}
+
+.portfolio-board {
+    height: 40em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 36px;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 10em 3em 10em;
+    background-color: white;
+    z-index: 1;
+}
+
+.portfolio-board #port-title {
+    font-family: 'Roboto Condensed';
+    color: gray;
+    margin: 1.5em;
+    font-size: 2em;
+}
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1280px) {
+    .portfolio-board {
+        margin: 1em;
+    }
+}

@@ -1,0 +1,82 @@
+header {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: #22303a;
+    display: flex;
+    height: 45em;
+    justify-content: center;
+    align-items: center;
+}
+
+header .waves {
+    position: absolute;
+    align-self: start;
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: .03;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Play';
+    font-size: 3em;
+    letter-spacing: 0.06em;
+}
+
+header h2 {
+    text-align: center;
+    color: white;
+    letter-spacing: 0.04em;
+    max-width: 500px;
+    margin-bottom: 5em;
+}
+
+header h2 b {
+    color: #f568fc;
+}
+
+header .header-slogan {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-slogan .js-balloon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:120px;
+    height: 120px;
+    border-radius: 360px;
+    color:black;
+    margin-top: 4em;
+    margin-bottom: 10em;
+}
+
+header .header-slogan img {
+    width:180px;
+    margin:2em;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    animation: rotation 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 500px) {
+    header .waves {
+        opacity: 0.13;
+    }
+}
