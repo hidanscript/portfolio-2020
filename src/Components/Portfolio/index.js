@@ -3,7 +3,8 @@ import Placeholder from '../../lib/Placeholders';
 import WorkCard from './WorkCard';
 import {
     Okupa,
-    LiveChat
+    LiveChat,
+    PythonDB
 } from './WorkList';
 import './index.css';
 
@@ -13,12 +14,16 @@ export default function Portfolio() {
 
     useEffect(() => {
 
-        const workList = [ Okupa , LiveChat ];
+        const workList = [ Okupa , LiveChat, PythonDB ];
 
         setRecentWorks(workList);
 
 
     }, []);
+
+    const goToGithub = () => {
+        window.open("https://github.com/hidanscript", "_blank");
+    };
 
     const renderRecentWorks = work => {
         return <WorkCard title={work.title} desc={work.desc} link={work.link} image={work.image} alt={work.alt} />;
@@ -36,7 +41,10 @@ export default function Portfolio() {
                 <div className="works-list">
                     { recentWorksList }
                 </div>
+
+                <input className="github-ref-button" type="button" onClick={() => goToGithub()} value="See all my works on GitHub!"/>
             </div>
+
         </div>
     );
 }

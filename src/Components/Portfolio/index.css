@@ -2,7 +2,7 @@
     grid-column: 1 / 4;
     display: flex;
     justify-content: center;
-    height:50em;
+    height: inherit;
     background-color: #0049ff;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .portfolio-board {
-    height: 40em;
+    height: inherit;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,11 +35,40 @@
 
 .works-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.github-ref-button {
+    align-self: center;
+    width: 360px;
+    height: 55px;
+    border-radius: 36px;
+    border: 2px solid #0049ff;
+    color: #0049ff;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:'Baloo 2';
+    background: none;
+    cursor: pointer;
+    transition: 150ms ease;
+    outline: none;
+    margin: 4em;
+}
+
+.github-ref-button:hover {
+    background-color: #0049ff;
+    color: white;
 }
 
 @media(max-width:1280px) {
     .portfolio-board {
         margin: 1em;
+    }
+
+    .github-ref-button {
+        margin-right: 1em;
+        margin-left: 1em;
     }
 }
