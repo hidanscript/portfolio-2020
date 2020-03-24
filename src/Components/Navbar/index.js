@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Placeholder from '../../lib/Placeholders';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './index.css';
 
 export default function Navbar() {
 
+    const [ showContactScreen , setContactScreen ] = useState(false);
+
+    const contactMe = () => {
+        setContactScreen(!showContactScreen);
+    };
+
+    let contactScreen;
+
+    if(showContactScreen) {
+        contactScreen = <div id="contact-screen" className="contact-screen">
+                            <div className="contact-card">
+                                <i onClick={contactMe} className="fas fa-times"></i>
+                                <h2>Contact</h2>
+                                <p><b>Email: </b>dmarcano.ml@gmail.com</p>
+                                <p><b>Phone: </b>+54 11 7362 6851</p>
+                            </div>
+                        </div>
+    }
+
     return(
         <nav className="Navbar">
             
             <img src={Placeholder.Logo} alt="placeholder-logo" />
+
+            { contactScreen }
 
             <ul>
                 <li>
@@ -25,7 +46,7 @@ export default function Navbar() {
                 </li>
             </ul>
 
-            <input className="contact-nav-button" type="button" value="Contact"></input>
+            <input className="contact-nav-button" type="button" onClick={contactMe} value="Contact"></input>
         </nav>
     );
 }
