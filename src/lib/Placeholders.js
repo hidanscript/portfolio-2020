@@ -1,6 +1,7 @@
-import React from '../Images/react.png'
-import Okupa from '../Images/okupa.png'
-import Python from '../Images/python.png'
+import React from '../Images/react.png';
+import Okupa from '../Images/okupa.png';
+import Python from '../Images/python.png';
+import Chat from '../Images/chat2.png';
 
 const Placeholder = {
     Logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Atom_editor_logo.svg/1200px-Atom_editor_logo.svg.png",
@@ -18,7 +19,7 @@ const Placeholder = {
     PythonDBThumbnail: Python,
     JestThumbnail: "https://www.adictosaltrabajo.com/wp-content/uploads/2020/01/JEST-1.png",
     Code: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
-    SocketIO: "https://blog.encuestassurveywork.com/wp-content/uploads/2017/05/jivochat.png",
+    SocketIO: Chat,
     Okupa: Okupa
 }
 
