@@ -53,7 +53,7 @@
     max-width: 300px;   
 }
 
-.workcard-content input {
+.workcard-content .btn-workcard {
     padding: 0.5em;
     margin: 0.8em;
     width:140px;
@@ -67,7 +67,7 @@
     outline: none;
 }
 
-.workcard-content input:hover {
+.workcard-content .btn-workcard:hover {
     background-color: #0049ff;
     color: white;
 }

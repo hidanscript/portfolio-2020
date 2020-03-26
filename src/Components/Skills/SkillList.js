@@ -5,7 +5,7 @@ export const ReactSkill = {
     desc: "A JavaScript library for building user interfaces",
     image: Placeholder.ReactThumbnail,
     alt: "react",
-    rank: "4.5"
+    rank: "5.0"
 };
 
 export const ExpressSkill = { 
@@ -45,7 +45,7 @@ export const JavascriptSkill = {
     desc: "Data transfer library",
     image: Placeholder.JavascriptThumbnail,
     alt: "javascript",
-    rank: "4.5"
+    rank: "5.0"
 };
 
 export const PythonSkill = { 
@@ -53,7 +53,7 @@ export const PythonSkill = {
     desc: "Data transfer library",
     image: Placeholder.PythonThumbnail,
     alt: "python",
-    rank: "3.5"
+    rank: "4.5"
 };
 
 export const GoSkill = { 
@@ -61,7 +61,7 @@ export const GoSkill = {
     desc: "Data transfer library",
     image: Placeholder.GoThumbnail,
     alt: "golang",
-    rank: "3.5"
+    rank: "4.0"
 };
 
 
@@ -79,4 +79,12 @@ export const SQLServerSkill = {
     image: Placeholder.SQLServerThumbnail,
     alt: "sql server",
     rank: "4.5"
+};
+
+export const DjangoSkill = { 
+    title: "Django",
+    desc: "Data transfer library",
+    image: Placeholder.DjangoThumbnail,
+    alt: "django",
+    rank: "4.0"
 };

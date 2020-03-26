@@ -26,7 +26,7 @@ export default function Portfolio() {
     };
 
     const renderRecentWorks = work => {
-        return <WorkCard title={work.title} desc={work.desc} link={work.link} image={work.image} alt={work.alt} />;
+        return <WorkCard title={work.title} desc={work.desc} link={work.link} link2={work.link2} btnType={work.btnType} image={work.image} alt={work.alt} />;
     }
 
     const recentWorksList = recentWorks.map(renderRecentWorks);

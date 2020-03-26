@@ -1,10 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 export default function WorkCard(props) {
 
-    const openLink = () => {
-        window.open( props.link , "_blank");
+    const openLink = link => {
+        window.open( link , "_blank");
+    }
+
+    const getButtonType = () => {
+        if(props.btnType === "multiple") {
+            return(
+                <div className="btn-container">
+                    <Link to={props.link}>
+                        <input className="btn-workcard" type="button" value="View Online"/>
+                    </Link>
+                    <input className="btn-workcard" type="button" value="Source Code" onClick={() => openLink(props.link2)}/>
+                </div>
+            );
+        } else {
+            return(
+                <input className="btn-workcard" type="button" value="Source Code" onClick={() => openLink(props.link2)}/>
+            );
+        }
     }
 
     return(
@@ -14,7 +32,7 @@ export default function WorkCard(props) {
             <div className="workcard-content">
                 <h2>{ props.title }</h2>
                 <p>{ props.desc }</p>
-                <input type="button" value="Source Code" onClick={() => openLink()}/>
+                { getButtonType() }
             </div>
         </div>
     );

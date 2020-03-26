@@ -9,7 +9,8 @@ import {
          PythonSkill,
          GoSkill,
          SQLServerSkill,
-         JestSkill
+         JestSkill,
+         DjangoSkill
         } from './SkillList';
 import SkillCard from './SkillCard';
 import './index.css';
@@ -23,7 +24,7 @@ export default function Skills() {
     useEffect(() => {
 
         const skillListLanguages = [ JavascriptSkill, PythonSkill, GoSkill ];
-        const skillListFrameworks = [ ReactSkill, ExpressSkill, GraphQLSkill, ReduxSkill, JestSkill ];
+        const skillListFrameworks = [ ReactSkill, ExpressSkill, GraphQLSkill, ReduxSkill, JestSkill, DjangoSkill ];
         const skillListDatabases = [  MongoDBSkill, SQLServerSkill ];
 
         setSkillsLanguages(skillListLanguages);

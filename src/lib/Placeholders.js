@@ -20,7 +20,8 @@ const Placeholder = {
     JestThumbnail: "https://www.adictosaltrabajo.com/wp-content/uploads/2020/01/JEST-1.png",
     Code: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
     SocketIO: Chat,
-    Okupa: Okupa
+    Okupa: Okupa,
+    DjangoThumbnail: "https://www.pngkit.com/png/detail/70-702065_django-python-logo-apress-the-definitive-guide-to.png"
 }
 
 export default Placeholder;

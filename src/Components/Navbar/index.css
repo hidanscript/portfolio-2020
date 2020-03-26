@@ -85,17 +85,27 @@
     transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 11;
 }
 
 .contact-card i {
-    margin-left: auto;
+    position: absolute;
+    top: .5em;
+    right: .5em;
     font-size: 1.6em;
     color:gray;
     cursor: pointer;
+    transition: 150ms ease;
+}
+
+.contact-card i:hover {
+    color: lightgray;
 }
 
 .contact-card h2 {
+    margin:0;
     color: gray;
 }
 

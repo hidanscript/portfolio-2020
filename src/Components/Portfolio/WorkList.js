@@ -11,7 +11,9 @@ export const Okupa = {
 export const LiveChat = {
     title: "Live Chat",
     desc: "Online Chat app, made with Express, React and Socket.io!",
-    link: "https://github.com/hidanscript/sweeper-web",
+    btnType: "multiple",
+    link: "/login",
+    link2: "https://github.com/hidanscript/sweeper-web",
     image: Placeholder.SocketIO,
     alt: "socket.io"
 };
